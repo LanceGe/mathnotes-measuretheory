@@ -15,4 +15,25 @@ $E \subseteq \mathbb{R}, x \in \mathbb{R}$, 在$x$的任意邻域中都存在异
     \item $x$未必在$E$中
     \item 聚点的全体记为$E$, 称为$E$的导集. 
     \item 若$x \in E^{'}$, 在$x$的任一领域中, 存在无穷多个E中点.
+    \item $x \in E^{'}$等价于$E$中存在一点列$\{x_k\}, x_k \neq x, x_k \rightarrow x$. 
 \end{itemize}
+\section{闭集}
+\subsection{闭集的定义}
+$E \subseteq \mathbb{R}$, $E^{c}$是开集. 
+\subsection{闭集的性质}
+\begin{itemize}
+    \item 任意多个闭集的交集是闭集
+    \item 有限多个闭集的并是闭集
+    \item $E \subseteq \mathbb{R}$, $E$是闭集$\iff$ $E^{'} \subset E$
+    \item $E \subseteq \mathbb{R}$, $E^{0}$是开集, $E^{'}$是闭集
+    \item 若$A \subset B$, 则$A^{'} \subset B^{'}$
+    \item $(A \bigcup B)^{'} = A^{'} \bigcup B^{'}$
+\end{itemize}
+\subsection{完全集的定义}
+若$E \subseteq \mathbb{R}, E^{'}=E$, 则称$E$为完全集. 
+\subsubsection{Remark}
+完全集必然是闭集, 如$\mathscr{C}$. 
+\subsection{开集的构造定理}
+$\mathbb{R}$上任一个开集$G$总可以表示成至多可列个互不相交的开区间的并. 
+\subsection{有限覆盖定理}
+有限闭区间$\left[a, b\right]$, 开集族$\{G_{\alpha}\}, \alpha \in I$, 满足$\left[a, b\right] \subset \{G_{\alpha}\}$, 则一定可以存在有限多个$\{G_{\alpha}\}$中的开集$\{G_1, G_2, \cdots, G_n\}$, s.t. $\left[a, b\right] \subset \bigcup ^{n} _{i = 1} G_i$. 
