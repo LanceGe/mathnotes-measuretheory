@@ -1,0 +1,25 @@
+\section{测度的定义}
+\subsection{开集的测度}
+设$G$是$\mathbb{R}$上有界开集, 则$G$有构造$G = \bigcup _{k \ge 1} \left( a_k, b_k \right)$互不相交, 定义其测度为
+\begin{equation*}
+    mG = \sum_{k \ge 1} (b_k - a_k)
+\end{equation*}
+\subsection{闭集的测度}
+设$F$是$\mathbb{R}$上有界闭集, $\exists \left( a, b \right) \supset F$, 定义
+\begin{equation*}
+    mF = b-a-mG
+\end{equation*}
+\subsection{开集测度的性质}
+\begin{itemize}
+    \item $\forall G_1 \subset G_2, m(G_1) \le m(G_2)$ (单调性)
+    \item 若$G = \bigcup^{\infty}_{k=1} G_k$, $mG \le \sum^{\infty}_{k=1} m(G_k)$
+    \item 若$G = \bigcup^{\infty}_{k=1} G_k$, 且$G_k$两两不交, 则$mG = \sum^{\infty}_{k=1} m(G_k)$ (完全可加性)
+\end{itemize}
+\subsection{闭集测度的性质}
+\begin{itemize}
+    \item (有限可加性)若$F_1, F_2, \cdots, F_n$ 为闭集, $\forall 1 \le k \le n, F_k \subset \left( a_k, b_k \right)$, 且$\left( a_k, b_k \right)$两两不交, 则
+        \begin{equation*}
+            m(\bigcup^{n}_{k=1} F_k) = \sum^{n}_{k=1} m(F_k)
+        \end{equation*}
+    \item $G$开, $F$闭, $F \subset G$, 则$m(G \setminus F) = mG - mF$
+\end{itemize}
