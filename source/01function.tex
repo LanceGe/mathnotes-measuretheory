@@ -1,0 +1,30 @@
+\section{函数}
+\subsection{函数的定义}
+非空数集$A$, 对应法则$f$, 非空数集$B$, 则$f:A \rightarrow B$称为一个函数, 满足$\forall x \in A, \exists !f(x) \in B$. A称为定义域, $f(A)=\{f(x)|x \in A\}$称为$f$在$A$上的值域. \par
+若$f(A)=B$, 则称$f$是$A$上的满射. \par
+若$\forall x_1 \neq x_2, x_1, x_2 \in A, f(x_1) \neq f(x_2)$, 称$f$是单射, 也称$f$为一一映射. \par
+既是单射又是满射的函数, 称为一一对应. 
+$\forall B_0 \subset B, f^{-1}(B_0)=\{x \in A | f(x) \in B_0\}$, 称$f^{-1}(B_0)$为$B_0$的原像. \par
+\subsection{函数的性质}
+\begin{itemize}
+    \item $\forall A_0 \subset A, f^{-1}(f(A_0)) \supset A_0$
+    \item $\forall B_0 \subset B, f(f^{-1}(B_0)) \subset B_0$
+\end{itemize}
+\par
+对于$A_\alpha \subset A, \alpha \in I$, 
+\begin{itemize} 
+    \item $f(\bigcup (A_\alpha)) = \bigcup f(A_\alpha)$ 
+    \item $f(\bigcap (A_\alpha)) \subseteq \bigcap f(A_\alpha)$ 
+\end{itemize}
+\section{可列集}
+\subsection{可列集的定义}
+全体与自然数集一一对应的集合称为可列集. 
+\subsection{可列集的性质}
+\begin{itemize}
+    \item 可列集的子集是至多可列的
+    \item 无限集中必含有一个可列子集
+    \item 任何一个无限集,必和它的某个真子集一一对应
+    \item 至多可列个至多可列集的并集仍是至多可列集
+    \item $\left[0, 1\right]$是不可列集
+    \item $\mathscr{C}$是不可列集
+\end{itemize}
